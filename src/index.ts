@@ -32,4 +32,3 @@ export const handler = async (event: APIGatewayProxyEvent): Promise<APIGatewayPr
 
     return response;
 };
-//PaymentCardService.handleGetSimple();

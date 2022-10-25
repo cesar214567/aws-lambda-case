@@ -81,28 +81,5 @@ export class PaymentCardService {
     };
     return response;
   }
-/*
-static async handleGetSimple(){
 
-    const token:string = "3fa5af3480620cc5e0052c0e439a09ab";
-    const db = await connectToDatabase();
-    const paymentCardDoc = await db.collection('paymentcards').findOne({token:token},{});
-    const returnPaymentcard = JSON.parse(JSON.stringify(paymentCardDoc))
-    console.log(returnPaymentcard);
-    let paymentCardReturn;
-    if (paymentCardDoc!==null) {
-      const returnPaymentcard = JSON.parse(JSON.stringify(paymentCardDoc))
-      const {_id,cvv, ...returnValue} = returnPaymentcard;
-      paymentCardReturn = returnValue;
-    }
-    const response: APIGatewayProxyResult = {
-        statusCode: returnPaymentcard === null? 404 : 200,
-        body: JSON.stringify({
-            message: returnPaymentcard === null? "no matching token or already expired" :paymentCardReturn,
-        }),
-    };
-    console.log(response);
-    return response;
-  }
-*/
 }
