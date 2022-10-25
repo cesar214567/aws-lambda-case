@@ -26,6 +26,7 @@
   "dependencies": {
     "@testdeck/mocha": "^0.2.1",
     "@types/node": "^18.11.4",
+    "dotenv": "^16.0.3",
     "luhn": "^2.4.1",
     "mocha-typescript": "^1.1.17",
     "mongodb": "^4.11.0",
